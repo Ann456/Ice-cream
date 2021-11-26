@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Cool Ice Cream</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.33b724c6.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.43b30f10.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.442c5440.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.26109a4b.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="/src.e31bb0bc.css"></head>
+  <body class="body">
+    <div class="to-up">Top</div>
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <include src="./partials/header.html"></include>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/reviews.html"></include>
+    <include src="./partials/contacts.html"></include>
+    <include src="./partials/footer.html"></include>
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="/src.e31bb0bc.js"></script>
+    <script src="/advantages.580dbf0a.js"></script>
+    <script src="/modal.4331011c.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="/swiper.08bec4ff.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> -->
+   
+    <script>document.addEventListener('DOMContentLoaded', function () {
+  var toTopBtn = document.querySelector('.to-up');
+
+  window.onscroll = function () {
+    if (window.pageYOffset > 580) {
+      toTopBtn.style.display = 'block';
+    } else {
+      toTopBtn.style.display = 'none';
+    }
+  }; // плавный скролл наверх 
+
+
+  toTopBtn.addEventListener('click', function () {
+    window.scrollBy({
+      top: -document.documentElement.scrollHeight,
+      behavior: 'smooth'
+    });
+  });
+});</script>
+          <script>function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+var smoothLinks = document.querySelectorAll('a[href^="#"]');
+
+var _iterator = _createForOfIteratorHelper(smoothLinks),
+    _step;
+
+try {
+  var _loop = function _loop() {
+    var smoothLink = _step.value;
+    smoothLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      var id = smoothLink.getAttribute('href');
+      document.querySelector(id).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  };
+
+  for (_iterator.s(); !(_step = _iterator.n()).done;) {
+    _loop();
+  }
+} catch (err) {
+  _iterator.e(err);
+} finally {
+  _iterator.f();
+}
+
+;</script>
+        
+  
+  </body>
+</html>
