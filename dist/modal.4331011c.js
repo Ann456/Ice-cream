@@ -118,8 +118,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/modal.js":[function(require,module,exports) {
-(function () {
-  var refs = {
+(() => {
+  const refs = {
     openModalBtn: document.querySelector('[data-modal-open-header]'),
     closeModalBtn: document.querySelector('[data-modal-close-header]'),
     modal: document.querySelector('[data-modal-header]')
@@ -132,8 +132,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 })();
 
-(function () {
-  var refs = {
+(() => {
+  const refs = {
     openModalBtn: document.querySelector('[data-modal-open-header-mobile]'),
     closeModalBtn: document.querySelector('[data-modal-close-header-mobile]'),
     modal: document.querySelector('[data-modal-header-mobile]')
@@ -146,8 +146,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 })();
 
-(function () {
-  var refs = {
+(() => {
+  const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]')
@@ -160,8 +160,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 })();
 
-(function () {
-  var refs = {
+(() => {
+  const refs = {
     openModalBtn: document.querySelector('[data-modal-open-two]'),
     closeModalBtn: document.querySelector('[data-modal-close-two]'),
     modal: document.querySelector('[data-modal-two]')
@@ -174,8 +174,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 })();
 
-(function () {
-  var refs = {
+(() => {
+  const refs = {
     openModalBtn: document.querySelector('[data-modal-open-three]'),
     closeModalBtn: document.querySelector('[data-modal-close-three]'),
     modal: document.querySelector('[data-modal-three]')
@@ -188,8 +188,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 })();
 
-(function () {
-  var refs = {
+(() => {
+  const refs = {
     openModalBtn: document.querySelector('[data-about-modal-open]'),
     closeModalBtn: document.querySelector('[data-about-modal-close]'),
     modal: document.querySelector('[data-about-modal]')
@@ -202,8 +202,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 })();
 
-(function () {
-  var refs = {
+(() => {
+  const refs = {
     openModalBtn: document.querySelector('[data-modal-open-franchise]'),
     closeModalBtn: document.querySelector('[data-modal-close-franchise]'),
     modal: document.querySelector('[data-modal-franchise]')
@@ -254,7 +254,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53810" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53992" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -118,7 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/swiper.js":[function(require,module,exports) {
-var swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -156,7 +156,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53810" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53992" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

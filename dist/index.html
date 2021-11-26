@@ -21,14 +21,660 @@
     <div class="to-up">Top</div>
     <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/header.html"></include>
-    <include src="./partials/products.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/advantages.html"></include>
-    <include src="./partials/gallery.html"></include>
-    <include src="./partials/reviews.html"></include>
-    <include src="./partials/contacts.html"></include>
-    <include src="./partials/footer.html"></include>
+    <section class="section section-header">
+    <div class="container header">
+        <div class="main-menu">
+            <nav class="menu">
+                <!--Logo-->
+                <a class="menu__link" href="/index.html" title="Logo">
+                    <svg class="menu__icon" width="199" height="50">
+                        <use href="/symbol.2465250c.svg#icon-logo"></use>
+                    </svg>
+                </a>
+                <!-- Mobile-menu -->
+                <div class="mobile">
+                
+                    <!-- button-open -->
+                    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg class="mobile__icon-Burger" width="20" height="12">
+                            <use href="/burger.fd086f28.svg#icon-Burger"></use>
+                        </svg>
+                    </button>
+                    <div class="menu-container js-menu-container" id="mobile-nav">
+                        <!-- button-close -->
+                        <button class="menu-toggle js-close-menu">
+                            <svg class="close-mobile" width="14" height="14">
+                                <use href="/close-mobile.06bdc01a.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                        <!-- menu-container__mobile -->
+                        <div class="menu-container__mobile">
+                            
+                            <button type="button" class="mobile-modal" data-modal-open-header-mobile="">Buy now</button>
+                            <!-- BACKDROP-mobile -->
+                            <div class="backdrop backdrop--hidden" data-modal-header-mobile="">
+                                <div class="modal modal__about">
+                                    <button data-modal-close-header-mobile="" class="modal__button-data-header close">
+                                        <svg class="modal__button-close">
+                                            <use href="/icon-close-products.180c3911.svg#icon-close-black-18dp-2-1-1-1"></use>
+                                        </svg>
+                                    </button>
+                                    <h3 class="products__name-header products__name-header">Make order</h3>
+                            
+                                    <div class="modal-header-body">
+                                        <form class="modal-header__form">
+                            
+                                            <p class="modal-header__text">Choose a product</p>
+                                            <div class="modal-header__box">
+                                                <label class="modal-header__label">
+                                                    <input class="modal-header__input" type="checkbox" name="product" value="Icecream" checked="">
+                                                    Icecream
+                                                </label>
+                                                <label class="modal-header__label">
+                                                    <input class="modal-header__input" type="checkbox" name="product" value="Ice coffee" checked="">
+                                                    Ice coffee
+                                                </label>
+                                                <label class="modal-header__label">
+                                                    <input class="modal-header__input" type="checkbox" name="product" value="Milkshakes">
+                                                    Milkshakes
+                                                </label>
+                                            </div>
+                            
+                                            <p class="modal-header__text">Should we call you back?</p>
+                                            <div class="modal-header__box">
+                                                <label class="modal-header__label">
+                                                    <input class="modal-header__input" type="radio" name="call back" value="Yes" checked="">
+                                                    Yes
+                                                </label>
+                                                <label class="modal-header__label">
+                                                    <input class="modal-header__input" type="radio" name="call back" value="No">
+                                                    No
+                                                </label>
+                                            </div>
+                            
+                                            <p class="modal-header__text">Leave your contacts</p>
+                                            <label class="modal-header__label modal-header__label-flexed">
+                                                Email
+                                                <input class="modal-header__input" type="email" name="email" placeholder="example@mail.com">
+                                            </label>
+                                            <label class="modal-header__label modal-header__label-flexed">
+                                                Order details
+                                                <textarea class="modal-header__textarea" name="Order details" rows="5" placeholder="Type your message here..."></textarea>
+                                            </label>
+                            
+                                            <button class="modal-header__btn icecream-box__btn" type="submit">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- mobile-nav -->
+                            <ul class="mobile-nav">
+                                <li class="mobile-nav__item"><a class="mobile-nav__link mobile-nav__link--current" href="/index.html" title="Home">Home</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="#advantages" title="About us">About
+                                        us</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="#about" title="How it’s made?">How it’s
+                                        made?</a></li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="#products" title="Our products">Our products</a>
+                                </li>
+                                <li class="mobile-nav__item"><a class="mobile-nav__link" href="#contacts" title="Contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Menu Nav-->
+                <ul class="menu-nav">
+                    <li class="menu-nav__item"><a class="menu-nav__link menu-nav__link--current" href="/index.html" title="Home">Home</a></li>
+                    <li class="menu-nav__item"><a class="menu-nav__link" href="#advantages" title="About us">About us</a>
+                    </li>
+                    <li class="menu-nav__item"><a class="menu-nav__link" href="#about" title="How it’s made?">How
+                            it’s made?</a></li>
+                    <li class="menu-nav__item"><a class="menu-nav__link" href="#products" title="Our products">Our
+                            products</a></li>
+                    <li class="menu-nav__item"><a class="menu-nav__link" href="#contacts" title="Contact">Contact</a>
+                    </li>
+                </ul>
+                
+ 
+                        <button type="button" class="button menu-nav__modal" data-modal-open-header="">Buy now</button>
+                        <!-- BACKDROP -->
+                        <div class="backdrop backdrop--hidden" data-modal-header="">
+
+                            <div class="modal modal__about">
+                                <button data-modal-close-header="" class="modal__button-data-header close">
+                                    <svg class="modal__button-close">
+                                        <use href="/icon-close-products.180c3911.svg#icon-close-black-18dp-2-1-1-1"></use>
+                                    </svg>
+                                </button>
+                                <h3 class="products__name-header products__name-header">Make order</h3>
+                                
+                                <div class="modal-header-body">
+                                    <form class="modal-header__form">
+                                
+                                        <p class="modal-header__text">Choose a product</p>
+                                        <div class="modal-header__box">
+                                            <label class="modal-header__label">
+                                                <input class="modal-header__input" type="checkbox" name="product" value="Icecream" checked="">
+                                                Icecream
+                                            </label>
+                                            <label class="modal-header__label">
+                                                <input class="modal-header__input" type="checkbox" name="product" value="Ice coffee" checked="">
+                                                Ice coffee
+                                            </label>
+                                            <label class="modal-header__label">
+                                                <input class="modal-header__input" type="checkbox" name="product" value="Milkshakes">
+                                                Milkshakes
+                                            </label>
+                                        </div>
+                                
+                                        <p class="modal-header__text">Should we call you back?</p>
+                                        <div class="modal-header__box">
+                                            <label class="modal-header__label">
+                                                <input class="modal-header__input" type="radio" name="call back" value="Yes" checked="">
+                                                Yes
+                                            </label>
+                                            <label class="modal-header__label">
+                                                <input class="modal-header__input" type="radio" name="call back" value="No">
+                                                No
+                                            </label>
+                                        </div>
+                                
+                                        <p class="modal-header__text">Leave your contacts</p>
+                                        <label class="modal-header__label modal-header__label-flexed">
+                                            Email
+                                            <input class="modal-header__input" type="email" name="email" placeholder="example@mail.com">
+                                        </label>
+                                        <label class="modal-header__label modal-header__label-flexed">
+                                            Order details
+                                            <textarea class="modal-header__textarea" name="Order details" rows="5" placeholder="Type your message here..."></textarea>
+                                        </label>
+                                
+                                        <button class="modal-header__btn icecream-box__btn" type="submit">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+            </nav>
+            <div class="icecream">
+                <h1 class="icecream__title">ice cream <br> made with <br> <span class="icecream__title-passion">passion</span></h1>
+                <div class="icecream-box">
+                    <a class="icecream-box__btn product" href="#products" title="products">Products</a>
+                    <a class="icecream-box__btn made" href="#about" title="How it’s made?">How it’s made?</a>
+                </div>
+            </div>
+            <div class="milk">
+                <p class="milk__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et</p>
+                <button type="button" class="milk__button"><img src="/button-products.4de4dc1a.png" alt="Кнопка «button»"></button>
+            </div>
+            <div class="position-image">
+
+                <img class="position-image__icecream" srcset="/icecream.be3bbb46.png" src="/icecream.be3bbb46.png" alt="icecream" width="230">
+                <img class="position-image__girl" srcset="/girl.a9774c98.png" src="/girl.a9774c98.png" alt="girl" width="293">
+                <img class="position-image__sixteen" srcset="/16.591e5b6e.png" src="/16.591e5b6e.png" alt="sixteen" width="72">
+                <img class="position-image__twentythree grow" srcset="/23.fb13e8b6.png" src="/23.fb13e8b6.png" alt="twentythree" width="92">
+                <img class="position-image__milk" srcset="/milk.0a0970c7.png" src="/milk.0a0970c7.png" alt="milk" width="188">
+
+                <img class="position-image__icecream" srcset="/icecream.be3bbb46.png 1x,/icecream-mobile.0fa360d4.png 2x" src="/icecream.be3bbb46.png" alt="icecream" width="236">
+
+                <img class="position-image__girl" srcset="/girl.a9774c98.png" src="/girl.a9774c98.png" alt="girl" width="293">
+
+                <img class="position-image__sixteen" srcset="/16.591e5b6e.png" src="/16.591e5b6e.png" alt="sixteen" width="72">
+                <img class="position-image__twentythree" srcset="/23.fb13e8b6.png" src="/23.fb13e8b6.png" alt="twentythree" width="92">
+                <img class="position-image__milk" srcset="/milk.0a0970c7.png" src="/milk.0a0970c7.png" alt="milk" width="188">
+
+            </div>
+        </div>
+        
+
+
+    </div>
+    <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    <script defer="" src="/mobile-menu.02d75e0a.js"></script>
+
+</section>
+    <section id="products" class="products _anim-items  _anim-no-hide">
+    <div class="container">
+        <p class="section__label products__label _anim-items  _anim-no-hide">100% natural</p>
+        <h2 class="section__title products__title _anim-items  _anim-no-hide">products</h2>
+        <ul class="products__list ">
+            <li class="products__item products__item-icecream _anim-items  _anim-no-hide">
+                <h3 class="products__name">ice cream</h3>
+                    <svg class="products__icon">
+                        <use href="/products.522cdee4.svg#icon-Group-4-1"></use>
+                    </svg>
+                <p class="products__info ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et. dolore magna
+                        aliqua facilisis.</p>
+                <button type="button" class="button__products" data-modal-open=""><img src="/button-products.4de4dc1a.png" alt="Кнопка «button»"></button>
+
+            </li>
+            <li class="products__item products__item-icecoffee _anim-items _anim-no-hide">
+                <h3 class="products__name">ice coffee</h3>
+                    <svg class="products__icon">
+                        <use href="/products.522cdee4.svg#icon-Group-4-1"></use>
+                    </svg>
+                <p class="products__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et.
+                        dolore magna
+                        aliqua facilisis.</p>
+                <button type="button" class="button__products button__products-icecoffee" data-modal-open-two=""><img src="/button-products.4de4dc1a.png" alt="Кнопка «button»"></button>
+               
+            </li>
+            <li class="products__item products__item-milkshakes _anim-items  _anim-no-hide">
+                <h3 class="products__name">milkshakes</h3>
+                    <svg class="products__icon">
+                        <use href="/products.522cdee4.svg#icon-Group-4-1"></use>
+                    </svg>
+                <p class="products__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et.
+                        dolore magna
+                        aliqua facilisis.</p>
+                <button type="button" class="button__products button__products-milkshakes" data-modal-open-three=""><img src="/button-products.4de4dc1a.png" alt="Кнопка «button»"></button>
+              
+            </li>
+        </ul>
+    </div>
+    <div class="backdrop backdrop--hidden" data-modal="">
+        <div class="modal modal__icecream">
+            <img src="/icecream1.b3e67bba.png" alt="Мороженое" class="modal__foto">
+            <h3 class="products__name">Preparation</h3>
+            <p class="products__info products__info-modal">
+                In a small pot, simmer heavy cream, milk, sugar and salt until sugar completely dissolves, about 5 minutes.
+                Remove pot from heat. In a separate bowl, whisk yolks. ... <br>
+                Strain through a fine-mesh sieve into a bowl. Cool mixture to room temperature. Cover and chill at least 4
+                hours or overnight.
+            </p>
+            <button data-modal-close="" class="modal__button-data">
+                <svg class="modal__button-close">
+                    <use href="/icon-close-products.180c3911.svg#icon-close-black-18dp-2-1-1-1"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="backdrop backdrop--hidden" data-modal-two="">
+        <div class="modal modal__icecoffee">
+            <img src="/icecoffee1.0f87441d.png" alt="Кофе со льдом" class="modal__foto">
+            <h3 class="products__name">Preparation</h3>
+            <p class="products__info products__info-modal">
+                Combine sugar and 1 cup water in a medium saucepan over medium heat, stirring until the sugar has dissolved. Let cool
+                completely and stir in vanilla extract; set aside in the refrigerator until ready to serve. <br>
+                Serve coffee over ice with half and half and simple syrup, adding 1 teaspoon at a time, to taste.
+            </p>
+            <button data-modal-close-two="" class="modal__button-data">
+                <svg class="modal__button-close">
+                    <use href="/icon-close-products.180c3911.svg#icon-close-black-18dp-2-1-1-1"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="backdrop backdrop--hidden" data-modal-three="">
+        <div class="modal modal__milkshakes">
+            <img src="/milkshakes1.3037bb2d.png" alt="Милкшейк" class="modal__foto">
+            <h3 class="products__name">Preparation</h3>
+            <p class="products__info products__info-modal">
+                You only need two ingredients to make a great milkshake: ice cream and milk. One pint of ice cream will make two
+                milkshakes. Stick to plain flavors that don’t have mix-ins. You’ll need 2/3 cup milk, which is enough to get things
+                moving but doesn’t overwhelm the ice cream flavor. Whole milk makes the creamiest milkshakes!
+            </p>
+            <button data-modal-close-three="" class="modal__button-data">
+                <svg class="modal__button-close">
+                    <use href="/icon-close-products.180c3911.svg#icon-close-black-18dp-2-1-1-1"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+    <section class="box-about" id="about">
+  <div class="box-about__overlay">
+    <div class="container">
+      <p class="box-about__suptitle section__label _anim-items  _anim-no-hide">TRADITION AND LOVE</p>
+      <h2 class="box-about__title section__title _anim-items  _anim-no-hide">HOW IT'S MADE?</h2>
+      <div class="box-about__content">
+        <div class="box-about__bg-bossy"></div>
+        <div class="box-about__information">
+          <p class="box-about__main-text">
+            Ice cream (derived from earlier cream ice)- is a sweetened frozen food typically eaten 
+            as a snack or dessert. It may be made from dairy milk and sour cream.
+          </p>
+          <p class="box-about__details-text">
+            It may be made from dairy milk or cream and is flavored with a sweetener, either sugar
+            or an alternative a spice.  An alternative, and a spice, such as cocoa or vanilla, or 
+            with fruit such as strawberries or peaches. <br><br>Ice cream is a very colloidal
+            emulsion.
+          </p>
+          <button type="button" class="button box-about__button" data-about-modal-open="">
+            Read more
+            <svg class="box-about__btn-svg" width="10px" height="12px">
+              <use href="/arrow-button.14b13f24.svg#icon-arrow-button"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- BACKDROP -->
+<div class="backdrop backdrop--hidden" data-about-modal="">
+  <div class="modal modal__about">
+    <h3 class="products__name products__name-about">watch me</h3>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/hJYcBYptySU?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      <!-- <video src="https://www.youtube.com/watch?v=hJYcBYptySU&ab_channel=U%C4%9FurB%C3%B6ce%C4%9FimTv" width="100%" controls
+        autoplay loop preload="auto"></video> -->
+      <button data-about-modal-close="" class="modal__button-data">
+        <svg class="modal__button-close">
+          <use href="/icon-close-products.180c3911.svg#icon-close-black-18dp-2-1-1-1"></use>
+        </svg>
+      </button>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+
+    <section id="advantages" class="advantages">
+    <div class="container">
+    <h2 class="section__title section__title-advantages">Advantages</h2>
+<ul class="advantages__list">
+    <li class="advantages__item _anim-items  _anim-no-hide">
+        <h3 class="advantages__title">7</h3>
+        <p class="advantages__text">types of ice-cream products is manufactured by owr company</p>
+    </li>
+    <li class="advantages__item _anim-items _anim-no-hide advantages__item-second advantages__item--active">
+        <h3 class="advantages__title">3</h3>
+        <p class="advantages__text">SQF Level 3 - the industry`s highest achievable level of food safety and quality</p>
+    </li>
+    <li class="advantages__item _anim-items _anim-no-hide advantages__item-third advantages__item--active">
+        <h3 class="advantages__title">11</h3>
+        <p class="advantages__text">years of experience in ice-cream manufacturing</p>
+    </li>
+</ul>
+</div>
+
+</section>
+    <section class="gallery">
+  <h2 class="visually-hidden">Gallery of Products</h2>
+  <div class="container">
+    <ul class="gallery__items">
+      <li class="gallery__item gallery__item--cell1 _anim-items _anim-no-hide">
+        <img class="gallery__image" srcset="/gallery1.0464c8f6.jpg    1x,/gallery1_2x.a906b250.jpg 2x,/gallery1_3x.2125401b.jpg 3x" src="/gallery1.0464c8f6.jpg" alt="Фисташковое мороженое">
+      </li>
+      <li class="gallery__item gallery__item--cell2 _anim-items _anim-no-hide">
+        <img class="gallery__image" srcset="/gallery2.dc44944b.jpg    1x,/gallery2_2x.a3001431.jpg 2x,/gallery2_3x.ab964c50.jpg 3x" src="/gallery2.dc44944b.jpg" alt="Клубничное мороженое в рожке">
+      </li>
+      <li class="gallery__item gallery__item--cell3 _anim-items _anim-no-hide">
+        <img class="gallery__image" srcset="/gallery3.f33325af.jpg    1x,/gallery3_2x.2d1de5e9.jpg 2x,/gallery3_3x.bc6ac751.jpg 3x" src="/gallery3.f33325af.jpg" alt="Фруктовое мороженое на палочке">
+      </li>
+      <li class="gallery__item gallery__item--cell4 _anim-items _anim-no-hide">
+        <img class="gallery__image" srcset="/gallery4.6ac83aec.jpg    1x,/gallery4_2x.c39c80b0.jpg 2x,/gallery4_3x.99c4ce05.jpg 3x" src="/gallery4.6ac83aec.jpg" alt="асорти из мороженого в рожке">
+      </li>
+      <li class="gallery__item gallery__item--cell5 _anim-items _anim-no-hide">
+        <img class="gallery__image" srcset="/gallery5.b7d2464e.jpg    1x,/gallery5_2x.83bffe87.jpg 2x,/gallery5_3x.4b64948f.jpg 3x" src="/gallery5.b7d2464e.jpg" alt="Девушка ест мороженое">
+      </li>
+      <li class="gallery__item gallery__item--cell6 _anim-items _anim-no-hide">
+        <img class="gallery__image" srcset="/gallery6.c971178e.jpg    1x,/gallery6_2x.26a276ed.jpg 2x,/gallery6_3x.9efaf95b.jpg 3x" src="/gallery6.c971178e.jpg" alt="Мороженое с фруктами в креманке">
+      </li>
+      <li class="gallery__item gallery__item--cell7 _anim-items _anim-no-hide">
+        <img class="gallery__image" srcset="/gallery7.a3010fd4.jpg    1x,/gallery7_2x.8f6d3234.jpg 2x,/gallery7_3x.cd7da571.jpg 3x" src="/gallery7.a3010fd4.jpg" alt="Рожок с мороженым">
+      </li>
+      <li class="gallery__item gallery__item--cell8 _anim-items _anim-no-hide">
+        <img class="gallery__image" srcset="/gallery8.36e90c85.jpg    1x,/gallery8_2x.b86bd038.jpg 2x,/gallery8_3x.7ab5f47f.jpg 3x" src="/gallery8.36e90c85.jpg" alt="Собака ест мороженое">
+      </li>
+      <li class="gallery__item gallery__item--cell9 _anim-items _anim-no-hide">
+        <img class="gallery__image" srcset="/gallery9.9ddad31d.jpg    1x,/gallery9_2x.6056309a.jpg 2x,/gallery9_3x.b565d12b.jpg 3x" src="/gallery9.9ddad31d.jpg" alt="Коктейль молочный с мороженым">
+      </li>
+      <li class="gallery__item gallery__item--cell10 _anim-items _anim-no-hide">
+        <img class="gallery__image" srcset="/gallery10.3f1e324e.jpg    1x,/gallery10_2x.702aa0cf.jpg 2x,/gallery10_3x.6263ce38.jpg 3x" src="/gallery10.3f1e324e.jpg" alt="пироженко с мороженым">
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <article class="reviews">
+    <div class="container">
+    <h2 class="reviews__title visually-hidden">Reviews</h2>
+<div class="swiper">
+    <div class="slades swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="slades__field">
+                <img class="slades__image" srcset="/girl1.eca374bf.jpg 1x,/girl1@2x.b50d1b4a.jpg 2x" src="/girl1.eca374bf.jpg" alt="girl" width="85">
+                <div class="slades__text-background">
+                <p class="slades__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+                    </div>
+                <p class="slades__author">Emily, Los Angeles</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slades__field">
+                <img class="slades__image" srcset="/girl2.826a886f.jpg 1x,/girl2@2x.7971e6a6.jpg 2x" src="/girl2.826a886f.jpg" alt="girl" width="85">
+                <div class="slades__text-background">
+                    <p class="slades__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+                        nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+                </div>
+                <p class="slades__author">Pauline, Paris</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slades__field">
+                <img class="slades__image" srcset="/girl3.0b42e423.jpg 1x,/girl3@2x.19d2c9d2.jpg 2x" src="/girl3.0b42e423.jpg" alt="girl" width="85">
+                <div class="slades__text-background">
+                    <p class="slades__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+                        nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+                </div>
+                <p class="slades__author">Elen, Roma</p>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    </div>
+</div>
+</article>
+    <section class="contacts _anim-items _anim-no-hide" id="contacts">
+  <div class="container">
+    <h2 class="contacts__title visually-hidden">Contacts</h2>
+    <ul class="contacts__list">
+      <li class="contacts__item _anim-items _anim-no-hide">
+        <p class="contacts__office">Cafe</p>
+        <p class="contacts__city">Chicago</p>
+        <p class="contacts__address">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        <div class="schedule">
+          <ul class="schedule__list">
+            <li class="schedule__item">
+              <p class="schedule__days">Monday - Friday</p>
+              <p class="schedule__time">06:00 AM - 10:00 PM</p>
+            </li>
+            <li class="schedule__item">
+              <p class="schedule__days">Saturday - Sunday</p>
+              <p class="schedule__time">08:00 AM - 16:00 PM</p>
+            </li>
+          </ul>
+        </div>
+        <ul class="address">
+          <li class="address__item">
+            <a class="address__link" href="tel:+610383766284">+61(0) 383 766 284</a>
+          </li>
+          <li class="address__item">
+            <a class="address__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="contacts__item _anim-items _anim-no-hide">
+        <p class="contacts__office contacts__office--green">Food Truck</p>
+        <p class="contacts__city">Los Angeles</p>
+        <p class="contacts__address">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        <div class="schedule">
+          <ul class="schedule__list">
+            <li class="schedule__item">
+              <p class="schedule__days">Monday - Friday</p>
+              <p class="schedule__time">06:00 AM - 10:00 PM</p>
+            </li>
+            <li class="schedule__item">
+              <p class="schedule__days">Saturday - Sunday</p>
+              <p class="schedule__time">08:00 AM - 16:00 PM</p>
+            </li>
+          </ul>
+        </div>
+        <ul class="address">
+          <li class="address__item">
+            <a class="address__link" href="tel:+610383766284">+61(0) 383 766 284</a>
+          </li>
+          <li class="address__item">
+            <a class="address__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="contacts__item _anim-items _anim-no-hide">
+        <p class="contacts__office">Cafe</p>
+        <p class="contacts__city">New York</p>
+        <p class="contacts__address">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        <div class="schedule">
+          <ul class="schedule__list">
+            <li class="schedule__item">
+              <p class="schedule__days">Monday - Friday</p>
+              <p class="schedule__time">06:00 AM - 10:00 PM</p>
+            </li>
+            <li class="schedule__item">
+              <p class="schedule__days">Saturday - Sunday</p>
+              <p class="schedule__time">08:00 AM - 16:00 PM</p>
+            </li>
+          </ul>
+        </div>
+        <ul class="address">
+          <li class="address__item">
+            <a class="address__link" href="tel:+610383766284">+61(0) 383 766 284</a>
+          </li>
+          <li class="address__item">
+            <a class="address__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="contacts-buttons__box">
+      <ul class="contacts-buttons">
+        <li class="contacts-buttons__item">
+          <a href="https://goo.gl/maps/VNDFajdCuZzNYfbq8" target="_blank" class="contacts-buttons__primary">Our Locations
+          </a>
+          </li>
+        <li class="contacts-buttons__item">
+          <button class="contacts-buttons__secondary" type="button" data-modal-open-franchise="">
+            Franchise
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- modal-window on button"Our Locations" -->
+  <!-- <div class="backdrop backdrop--hidden" data-modal-locations>
+    <div class="modal modal-locations">
+      <button data-modal-close-locations class="modal-locations__btn">
+        <svg class="modal-locations__icon-close">
+          <use href="./images/icon-close-products.svg#icon-close-black-18dp-2-1-1-1"></use>
+        </svg>
+      </button>
+   
+      <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.5941837906466!2d30.520710515265165!3d50.448659195375726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce513ab320cf%3A0xb9fc242f88ad00e8!2z0JzQvtGA0L7Qt9C40LLQviBJY2UgQ3JlYW0!5e0!3m2!1sru!2sua!4v1631673028141!5m2!1sru!2sua"
+        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    
+      
+  </div> -->
+
+
+
+  <!-- modal-window on button"Franchise" -->
+  <div class="backdrop backdrop--hidden" data-modal-franchise="">
+    <div class="modal modal-franchise">
+      <button data-modal-close-franchise="" class="modal-franchise__btn">
+        <svg class="modal-franchise__icon-close">
+          <use href="/icon-close-products.180c3911.svg#icon-close-black-18dp-2-1-1-1"></use>
+        </svg>
+      </button>
+
+      <form class="modal-window-form">
+        <p class="modal-window-form__title">Please leave your contact information and we will get back to you</p>
+        <div class="modal-form-field__inputs" role="group">
+          <div class="form-field">
+            <label>
+              <span class="form-field__label">Name</span>
+              <div class="form-field__input-block">
+                <input class="form-field__input" type="text" name="name">
+              </div>
+            </label>
+          </div>
+          <div class="form-field">
+            <label>
+              <span class="form-field__label">Telephone</span>
+              <div class="form-field__input-block">
+                <input class="form-field__input" type="tel" name="tel">
+              </div>
+            </label>
+          </div>
+          <div class="form-field">
+            <label>
+              <span class="form-field__label">E-mail</span>
+              <div class="form-field__input-block">
+                <input class="form-field__input" type="email" name="email">
+              </div>
+            </label>
+          </div>
+          <div class="form-field-txtarea">
+            <label>
+              <span class="form-field__label">Details</span>
+              <textarea class="form-field-txtarea__input" name="details" placeholder="Your message..."></textarea>
+            </label>
+          </div>
+        </div>
+
+        <button class="contacts-buttons__secondary" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+    <div class="container footer__positioning">
+        <div class="footer__title">
+            <p class="footer__title--secondary _anim-items  _anim-no-hide">homemade ice cream made</p>
+            <p class="footer__title--main _anim-items _anim-no-hide">with passion</p>
+        </div>
+        <div class="footer__socials">
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a href="https://github.com/" target="_blank" aria-label="Link to github" class="social-list__link">
+                        <svg class="social-icon">
+                            <use href="/icons-footer.def83d73.svg#icon-github"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="https://web.telegram.org/" target="_blank" aria-label="Link to telegram" class="social-list__link">
+                        <svg class="social-icon">
+                            <use href="/icons-footer.def83d73.svg#icon-telegram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="https://www.facebook.com/" target="_blank" aria-label="Link to facebook" class="social-list__link">
+                        <svg class="social-icon">
+                            <use href="/icons-footer.def83d73.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <p class="footer__contact">Feel free to contact <a href="tel:+610383766284" class="footer__contact--tel">
+                    +61 (0) 383 766 284</a></p>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="copyright__text">© 2019 - IceCream. All Rights Reserved.</p>
+    </div>
+</footer>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="/src.e31bb0bc.js"></script>
     <script src="/advantages.580dbf0a.js"></script>
@@ -37,8 +683,8 @@
     <script src="/swiper.08bec4ff.js"></script>
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> -->
    
-    <script>document.addEventListener('DOMContentLoaded', function () {
-  var toTopBtn = document.querySelector('.to-up');
+    <script>document.addEventListener('DOMContentLoaded', () => {
+  let toTopBtn = document.querySelector('.to-up');
 
   window.onscroll = function () {
     if (window.pageYOffset > 580) {
@@ -56,37 +702,17 @@
     });
   });
 });</script>
-          <script>function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
+          <script>const smoothLinks = document.querySelectorAll('a[href^="#"]');
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-var smoothLinks = document.querySelectorAll('a[href^="#"]');
-
-var _iterator = _createForOfIteratorHelper(smoothLinks),
-    _step;
-
-try {
-  var _loop = function _loop() {
-    var smoothLink = _step.value;
-    smoothLink.addEventListener('click', function (e) {
-      e.preventDefault();
-      var id = smoothLink.getAttribute('href');
-      document.querySelector(id).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
+for (let smoothLink of smoothLinks) {
+  smoothLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    const id = smoothLink.getAttribute('href');
+    document.querySelector(id).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
     });
-  };
-
-  for (_iterator.s(); !(_step = _iterator.n()).done;) {
-    _loop();
-  }
-} catch (err) {
-  _iterator.e(err);
-} finally {
-  _iterator.f();
+  });
 }
 
 ;</script>
